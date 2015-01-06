@@ -1,0 +1,30 @@
+{
+  "name": "report-site-pagespeed",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec test/*.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/telemark/report-site-pagespeed.git"
+  },
+  "bugs": {
+    "url": "http://github.com/telemark/report-site-pagespeed/issues"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "gpagespeed": "^1.0.0"
+  }
+}
