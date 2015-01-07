@@ -25,6 +25,7 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "gpagespeed": "^1.0.0"
+    "gpagespeed": "^1.0.0",
+    "valid-url": "^1.0.9"
   }
 }
