@@ -25,4 +25,26 @@ describe('generateReport - inputs', function(){
 
   });
 
+  it('it requires options.urls to exist', function(done){
+
+    var opts = {
+          urls: false
+        }
+      ;
+
+    generateReport(opts, function(err, data){
+      assert.throws(function(){
+          if(err) throw err;
+        }, function(err){
+          if((err instanceof Error) && /Missing required input: options.urls/.test(err)){
+            return true
+          }
+        },
+        "Unexpected error"
+      );
+      done();
+    });
+
+  });
+
 });
