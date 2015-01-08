@@ -35,7 +35,7 @@ generateReport({apikey:apikey, urls:urls, fileName:'postlister.mobile.csv'}, fun
   if(error){
     console.error(error);
   } else {
-    console.log(data);
+   console.log(data);
   }
 });
 ```
@@ -44,7 +44,7 @@ generateReport({apikey:apikey, urls:urls, fileName:'postlister.mobile.csv'}, fun
 
 console:
 
-´´´
+```
 { message: 'Finished!', urls: 4, errors: [] }
 ```
 
