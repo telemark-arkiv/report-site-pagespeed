@@ -1,8 +1,8 @@
 'use strict';
 
-var generateReport = require('../lib/generatereport')
-  , assert = require('assert')
-  ;
+var generateReport = require('../lib/generatereport');
+var assert = require('assert');
+
 
 describe('generateReport - inputs', function(){
 
@@ -12,13 +12,17 @@ describe('generateReport - inputs', function(){
 
     generateReport(opts, function(err, data){
       assert.throws(function(){
-          if(err) throw err;
+          if(err) {
+            throw err;
+          } else {
+            console.log(data);
+          }
         }, function(err){
           if((err instanceof Error) && /Missing required input: options/.test(err)){
-            return true
+            return true;
           }
         },
-        "Unexpected error"
+        'Unexpected error'
       );
       done();
     });
@@ -28,19 +32,22 @@ describe('generateReport - inputs', function(){
   it('it requires options.urls to exist', function(done){
 
     var opts = {
-          urls: false
-        }
-      ;
+      urls: false
+    };
 
     generateReport(opts, function(err, data){
       assert.throws(function(){
-          if(err) throw err;
+          if(err) {
+            throw err;
+          } else {
+            console.log(data);
+          }
         }, function(err){
           if((err instanceof Error) && /Missing required input: options.urls/.test(err)){
-            return true
+            return true;
           }
         },
-        "Unexpected error"
+        'Unexpected error'
       );
       done();
     });
@@ -50,20 +57,23 @@ describe('generateReport - inputs', function(){
   it('it requires options.apikey to exist', function(done){
 
     var opts = {
-        urls: true,
-        apikey:false
-      }
-      ;
+      urls: true,
+      apikey:false
+    };
 
     generateReport(opts, function(err, data){
       assert.throws(function(){
-          if(err) throw err;
+          if(err) {
+            throw err;
+          } else {
+            console.log(data);
+          }
         }, function(err){
           if((err instanceof Error) && /Missing required input: options.apikey/.test(err)){
-            return true
+            return true;
           }
         },
-        "Unexpected error"
+        'Unexpected error'
       );
       done();
     });
