@@ -21,15 +21,14 @@ Pass in an options object with properties and a callback function.
 ```
 'use strict';
 
-var generateReport = require('report-site-pagespeed')
-  , apikey = 'your-api-key'
-  , urls = [
+var generateReport = require('report-site-pagespeed');
+var apikey = 'your-api-key';
+var urls = [
       'https://postlister.t-fk.no/',
       'https://postlister.t-fk.no/om.html',
       'https://postlister.t-fk.no/hjelp.html',
       'https://postlister.t-fk.no/personvern.html'
-    ]
-  ;
+    ];
 
 generateReport({apikey:apikey, urls:urls, fileName:'postlister.mobile.csv'}, function(error, data){
   if(error){
