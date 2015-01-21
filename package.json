@@ -9,7 +9,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec test/*.js"
+    "test": "mocha --reporter spec test/*.js",
+    "coverage": "istanbul cover -x 'test/*.js' _mocha -- --reporter spec --timeout 4000"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -22,6 +23,7 @@
     "url": "http://github.com/telemark/report-site-pagespeed/issues"
   },
   "devDependencies": {
+    "istanbul": "^0.3.5",
     "jscs": "^1.10.0",
     "mocha": "^2.1.0"
   },
