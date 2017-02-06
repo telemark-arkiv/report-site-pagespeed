@@ -23,11 +23,11 @@
     "url": "http://github.com/telemark/report-site-pagespeed/issues"
   },
   "devDependencies": {
-    "istanbul": "^0.3.5",
-    "jscs": "^1.10.0",
-    "mocha": "^2.1.0"
+    "istanbul": "^0.4.5",
+    "jscs": "^3.0.7",
+    "mocha": "^3.2.0"
   },
   "dependencies": {
-    "gpagespeed": "^1.0.0"
+    "gpagespeed": "^4.0.2"
   }
 }
