@@ -1,5 +1,7 @@
 #report-site-pagespeed [![Build Status](https://travis-ci.org/telemark/report-site-pagespeed.svg?branch=master)](https://travis-ci.org/telemark/report-site-pagespeed)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/report-site-pagespeed.svg)](https://greenkeeper.io/)
+
 Node.js module for creating PageSpeed reports for webpages.
 
 ##Usage
