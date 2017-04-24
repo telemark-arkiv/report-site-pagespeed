@@ -25,7 +25,7 @@
   "devDependencies": {
     "istanbul": "^0.4.5",
     "jscs": "^3.0.7",
-    "mocha": "^3.2.0"
+    "mocha": "3.2.0"
   },
   "dependencies": {
     "gpagespeed": "^4.0.2"
